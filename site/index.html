@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="portfolio site of the artist collective Boutique Vizique">
+    <meta name="author" content="boutique vizique">
+
+    <title>BOUTIQUE VIZIQUE vzw</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/bv_theme.css" rel="stylesheet">
+	<!-- blend of full-slider, full-width pics & scrolling-nav from http://startbootstrap.com/ -->
+	
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	
+	<!-- Favicon -->
+	<link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+	<!-- Custom Fonts -->
+    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div id="page-top"><!-- empty div to scroll back to top --></div> 
+	
+    <!-- Full Page Image Background Carousel Header -->
+    <header id="myCarousel" class="carousel slide">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for Slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <!-- Set the first background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('img/Babble01.jpg');"></div>
+                <div class="carousel-caption">
+                    <h2>Babble</h2>
+                </div>
+            </div>
+            <div class="item">
+                <!-- Set the second background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('img/BeatBlocks1.jpg');"></div>
+                <div class="carousel-caption">
+                    <h2>Beat Blocks</h2>
+                </div>
+            </div>
+            <div class="item">
+                <!-- Set the third background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('img/Dustbunnies1.jpg');"></div>
+                <div class="carousel-caption">
+                    <h2>Dustbunnies</h2>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="icon-next"></span>
+        </a>
+    </header>
+
+
+<!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">BOUTIQUE VIZIQUE vzw</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a class="page-scroll" href="#page-top"></a>
+                    </li>
+
+                    <li class="dropdown">
+						<a class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">Current Projects<span class="caret"></span></a>
+  						<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+    						<li role="presentation"><a class="page-scroll" role="menuitem" tabindex="-1" href="#stonesoup">Stone Soup</a></li>
+    						<li role="presentation"><a class="page-scroll" role="menuitem" tabindex="-1" href="#lichtbewolkt">Licht Bewolkt</a></li>
+  						</ul>
+                    </li>
+					<li class="dropdown">
+						<a class="dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-expanded="true">Past Projects<span class="caret"></span></a>
+  						<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu2">
+    						<li role="presentation"><a class="page-scroll" role="menuitem" tabindex="-1" href="#modusmotus">Modus Motus</a></li>
+    						<li role="presentation"><a class="page-scroll" role="menuitem" tabindex="-1" href="#dustbunnies">Dustbunnies</a></li>
+							<li role="presentation"><a class="page-scroll" role="menuitem" tabindex="-1" href="#babble">Babble</a></li>
+  						</ul>
+                    </li>
+					<li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+
+        </div>
+        <!-- /.container -->
+    </nav>
+	
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Boutique Vizique</h1>
+					<p><strong>Boutique Vizique</strong> is an artist collective, non-profit organization and a platform for experimentation by <a href="http://hendrik.leper.be"><u>Hendrik Leper</u></a> and <a href="http://mulchio.net"><u>Stijn Schiffeleers</u></a>. Originally drawn together by their early video work, both artists started collaborating on a large number of projects. The result is a series of captivating interactive installations that take you into a world of imagination and gentle technology. Their multimedia works create experiences that playfully challenge our perception of objects and space. Although geographically separated at this point, both artist keep working together and recently turned their collective into a non-profit organization in support of the media arts.</p>
+<p>Since 2004, <em>Boutique Vizique</em>  has exhibited internationally at museums and media festivals including Matchmaking, Artbots, Beall Art Centre, RX Gallery, M HKA media, Oakland Museum of California and Z33.</p>
+					<table>
+						<tr>
+							<td style="vertical-align:top; padding-right: 2px;"><strong> CONTACT : </strong></td>
+							<td style="vertical-align:top; padding-left: 2px;">Boutique Vizique vzw<br>Bouwmeestersstraat 46<br>9040 St-Amandsberg<br>Belgium<br></td>
+						</tr>
+					</table>
+				</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="stonesoup" class="stonesoup-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Stone Soup <span class="badge">(2010 — ongoing)</span></h1>
+					<p>is a project initiated, curated, produced and funded by Boutique Vizique in collaboration with artist Caroline Vincart. 'Stone Soup' offers artists a platform to present their work in a light box, mounted on a wall in Ghent, Belgium. In an alternating process, each work stays up for a year, placed against a different image every six months. The new work replaces the oldest of the two images, thus creating a new dialogue every time.</p>
+					<button type="button" class="btn btn-default"><a target="_blank" href="http://boutiquevizique.com/stonesoup">go to project site</a></button>
+                </div>
+            </div>
+		</div>
+    </section>
+	<!-- Services Section -->
+    <section id="lichtbewolkt" class="lichtbewolkt-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Licht Bewolkt <span class="label label-default">(2014)</span></h1>
+					<p>is an installation that immerses you in a spatial experience of light and sound by means of 195 RGB led light fixtures spread out as a 13 by 15 grid on the ceiling. Each fixture can be controlled independently allowing for an infinite number of light patterns and low resolution images to be created.</p>
+					<p>'Licht Bewolkt'  was developed as a permanent and integrated artwork in the day care centre 'Hoekhuis' in Vlezenbeek in Belgium. Its design is focused on a group of children and young adults with multiple disabilities, yet can be experienced by a wider audience as artistic and authentic. The work reflects a well-considered approach towards the method of therapy through sensory activation.</p>
+					
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- pastprojects Section -->
+    <section id="modusmotus" class="pastprojects-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Modus Motus</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="dustbunnies" class="pastprojects-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Dustbunnies</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="babble" class="pastprojects-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Babble</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+        <hr>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copylight &copy; Boutique Vizique 2015</p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </footer>
+
+    <!--/div-->
+    <!-- /.container -->
+
+	
+	
+	
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Script to Activate the Carousel -->
+    <script>
+    $('.carousel').carousel({
+        interval: 5000 //changes the speed
+    })
+    </script>
+	
+	<!-- Scrolling Nav JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/scrolling-nav.js"></script>
+
+</body>
+
+</html>

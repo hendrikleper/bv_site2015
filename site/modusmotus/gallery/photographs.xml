@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<gallery frameColor="0xFFFFFF" frameWidth="5" imagePadding="4" displayTime="6" enableRightClickOpen="true">
+
+<image>
+   <url>gallery/photographs/02_LissaBlue.jpg</url>
+   <caption></caption>
+   <width>1024</width>
+   <height>683</height>
+</image>
+<image>
+   <url>gallery/photographs/04_RedSwing.jpg</url>
+   <caption></caption>
+   <width>1024</width>
+   <height>683</height>
+</image>
+<image>
+   <url>gallery/photographs/01_pinkEllips.jpg</url>
+   <caption><![CDATA[<font size="16"></font><br /><font size="14"></font>]]></caption>
+   <width>1024</width>
+   <height>683</height>
+</image>
+<image>
+   <url>gallery/photographs/03_BlueLissa2.jpg</url>
+   <caption></caption>
+   <width>1024</width>
+   <height>683</height>
+</image>
+<image>
+   <url>gallery/photographs/10_feathers2.jpg</url>
+   <caption></caption>
+   <width>1024</width>
+   <height>683</height>
+</image>
+<image>
+   <url>gallery/photographs/07_white.jpg</url>
+   <caption></caption>
+   <width>1024</width>
+   <height>683</height>
+</image>
+<image>
+   <url>gallery/photographs/08_greenBone.jpg</url>
+   <caption></caption>
+   <width>1024</width>
+   <height>683</height>
+</image>
+<image>
+   <url>gallery/photographs/09_orangeClaws.jpg</url>
+   <caption></caption>
+   <width>1024</width>
+   <height>683</height>
+</image>
+<image>
+   <url>gallery/photographs/05_feathers.jpg</url>
+   <caption></caption>
+   <width>1024</width>
+   <height>683</height>
+</image>
+<image>
+   <url>gallery/photographs/12_greenSamuraj.jpg</url>
+   <caption></caption>
+   <width>1024</width>
+   <height>683</height>
+</image>
+<image>
+   <url>gallery/photographs/06_rainbow.jpg</url>
+   <caption></caption>
+   <width>1024</width>
+   <height>683</height>
+</image>
+</gallery>

@@ -2,239 +2,530 @@
 <html lang="en">
 
 <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="portfolio site of the artist collective Boutique Vizique">
+  <meta name="author" content="boutique vizique">
+  <title>BOUTIQUE VIZIQUE vzw</title>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="portfolio site of the artist collective Boutique Vizique">
-    <meta name="author" content="boutique vizique">
+  <!-- Bootstrap Core CSS -->
+  <link href="css/bootstrap.css" rel="stylesheet">
 
-    <title>BOUTIQUE VIZIQUE vzw</title>
+  <!-- Custom CSS -->
+  <link href="css/bv_theme.css" rel="stylesheet">
+  <!-- blend of full-slider, full-width pics & scrolling-nav from http://startbootstrap.com/ -->
 
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="css/bv_theme.css" rel="stylesheet">
-	<!-- blend of full-slider, full-width pics & scrolling-nav from http://startbootstrap.com/ -->
-	
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-	
-	<!-- Favicon -->
-	<link rel="icon" href="img/favicon.ico" type="image/x-icon" />
-	<!-- Custom Fonts -->
-    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+  <!-- Favicon -->
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+  <!-- Custom Fonts -->
+  <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
 </head>
 
 <body>
-	<div id="page-top"><!-- empty div to scroll back to top --></div> 
-	
-    <!-- Full Page Image Background Carousel Header -->
-    <header id="myCarousel" class="carousel slide">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>
+  <div id="page-top">
+    <!-- empty div to scroll back to top -->
+  </div>
 
-        <!-- Wrapper for Slides -->
-        <div class="carousel-inner">
-            <div class="item active">
-                <!-- Set the first background image using inline CSS below. -->
-                <div class="fill" style="background-image:url('img/Babble01.jpg');"></div>
-                <div class="carousel-caption">
-                    <h2>Babble</h2>
-                </div>
-            </div>
-            <div class="item">
-                <!-- Set the second background image using inline CSS below. -->
-                <div class="fill" style="background-image:url('img/BeatBlocks1.jpg');"></div>
-                <div class="carousel-caption">
-                    <h2>Beat Blocks</h2>
-                </div>
-            </div>
-            <div class="item">
-                <!-- Set the third background image using inline CSS below. -->
-                <div class="fill" style="background-image:url('img/Dustbunnies1.jpg');"></div>
-                <div class="carousel-caption">
-                    <h2>Dustbunnies</h2>
-                </div>
-            </div>
+  <!-- Full Page Image Background Carousel Header -->
+  <header id="myCarousel" class="carousel slide">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+      <li data-target="#myCarousel" data-slide-to="4"></li>
+      <li data-target="#myCarousel" data-slide-to="5"></li>
+    </ol>
+
+    <!-- Wrapper for Slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <!-- Set the first background image using inline CSS below. -->
+        <div class="fill" style="background-image:url('img/Dustbunnies1.jpg');"></div>
+        <div class="carousel-caption">
+          <h2><a class="page-scroll" href="#dustbunnies">Dustbunnies</a></h2>
         </div>
-
-        <!-- Controls -->
-        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-            <span class="icon-prev"></span>
-        </a>
-        <a class="right carousel-control" href="#myCarousel" data-slide="next">
-            <span class="icon-next"></span>
-        </a>
-    </header>
-
-
-<!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand page-scroll" href="#page-top">BOUTIQUE VIZIQUE vzw</a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-ex1-collapse">
-                <ul class="nav navbar-nav">
-                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                    <li class="hidden">
-                        <a class="page-scroll" href="#page-top"></a>
-                    </li>
-
-                    <li class="dropdown">
-						<a class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">Current Projects<span class="caret"></span></a>
-  						<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-    						<li role="presentation"><a class="page-scroll" role="menuitem" tabindex="-1" href="#stonesoup">Stone Soup</a></li>
-    						<li role="presentation"><a class="page-scroll" role="menuitem" tabindex="-1" href="#lichtbewolkt">Licht Bewolkt</a></li>
-  						</ul>
-                    </li>
-					<li class="dropdown">
-						<a class="dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-expanded="true">Past Projects<span class="caret"></span></a>
-  						<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu2">
-    						<li role="presentation"><a class="page-scroll" role="menuitem" tabindex="-1" href="#modusmotus">Modus Motus</a></li>
-    						<li role="presentation"><a class="page-scroll" role="menuitem" tabindex="-1" href="#dustbunnies">Dustbunnies</a></li>
-							<li role="presentation"><a class="page-scroll" role="menuitem" tabindex="-1" href="#babble">Babble</a></li>
-  						</ul>
-                    </li>
-					<li>
-                        <a class="page-scroll" href="#about">About</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-
+      </div>
+      <div class="item">
+        <!-- Set the second background image using inline CSS below. -->
+        <div class="fill" style="background-image:url('img/BeatBlocks1.jpg');"></div>
+        <div class="carousel-caption">
+          <h2><a class="page-scroll" href="#beatblocks">Beat Blocks</a></h2>
         </div>
-        <!-- /.container -->
-    </nav>
-	
-    <!-- About Section -->
-    <section id="about" class="about-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1>Boutique Vizique</h1>
-					<p><strong>Boutique Vizique</strong> is an artist collective, non-profit organization and a platform for experimentation by <a href="http://hendrik.leper.be"><u>Hendrik Leper</u></a> and <a href="http://mulchio.net"><u>Stijn Schiffeleers</u></a>. Originally drawn together by their early video work, both artists started collaborating on a large number of projects. The result is a series of captivating interactive installations that take you into a world of imagination and gentle technology. Their multimedia works create experiences that playfully challenge our perception of objects and space. Although geographically separated at this point, both artist keep working together and recently turned their collective into a non-profit organization in support of the media arts.</p>
-<p>Since 2004, <em>Boutique Vizique</em>  has exhibited internationally at museums and media festivals including Matchmaking, Artbots, Beall Art Centre, RX Gallery, M HKA media, Oakland Museum of California and Z33.</p>
-					<table>
-						<tr>
-							<td style="vertical-align:top; padding-right: 2px;"><strong> CONTACT : </strong></td>
-							<td style="vertical-align:top; padding-left: 2px;">Boutique Vizique vzw<br>Bouwmeestersstraat 46<br>9040 St-Amandsberg<br>Belgium<br></td>
-						</tr>
-					</table>
-				</div>
-            </div>
+      </div>
+      <div class="item">
+        <!-- Set the third background image using inline CSS below. -->
+        <div class="fill" style="background-image:url('img/Babble01.jpg');"></div>
+        <div class="carousel-caption">
+          <h2><a class="page-scroll" href="#babble">Babble</a></h2>
         </div>
-    </section>
-
-    <!-- Services Section -->
-    <section id="stonesoup" class="stonesoup-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1>Stone Soup <span class="badge">(2010 — ongoing)</span></h1>
-					<p>is a project initiated, curated, produced and funded by Boutique Vizique in collaboration with artist Caroline Vincart. 'Stone Soup' offers artists a platform to present their work in a light box, mounted on a wall in Ghent, Belgium. In an alternating process, each work stays up for a year, placed against a different image every six months. The new work replaces the oldest of the two images, thus creating a new dialogue every time.</p>
-					<button type="button" class="btn btn-default"><a target="_blank" href="http://boutiquevizique.com/stonesoup">go to project site</a></button>
-                </div>
-            </div>
-		</div>
-    </section>
-	<!-- Services Section -->
-    <section id="lichtbewolkt" class="lichtbewolkt-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1>Licht Bewolkt <span class="label label-default">(2014)</span></h1>
-					<p>is an installation that immerses you in a spatial experience of light and sound by means of 195 RGB led light fixtures spread out as a 13 by 15 grid on the ceiling. Each fixture can be controlled independently allowing for an infinite number of light patterns and low resolution images to be created.</p>
-					<p>'Licht Bewolkt'  was developed as a permanent and integrated artwork in the day care centre 'Hoekhuis' in Vlezenbeek in Belgium. Its design is focused on a group of children and young adults with multiple disabilities, yet can be experienced by a wider audience as artistic and authentic. The work reflects a well-considered approach towards the method of therapy through sensory activation.</p>
-					
-                </div>
-            </div>
+      </div>
+      <div class="item">
+        <!-- Set the fourth background image using inline CSS below. -->
+        <div class="fill" style="background-image:url('img/ModusMotus1.jpg');"></div>
+        <div class="carousel-caption">
+          <h2><a class="page-scroll" href="#modusmotus">Modus Motus</a></h2>
         </div>
-    </section>
-
-    <!-- pastprojects Section -->
-    <section id="modusmotus" class="pastprojects-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1>Modus Motus</h1>
-                </div>
-            </div>
+      </div>
+      <div class="item">
+        <!-- Set the fifth background image using inline CSS below. -->
+        <div class="fill" style="background-image:url('img/StopKontakt1.jpg');"></div>
+        <div class="carousel-caption">
+          <h2><a class="page-scroll" href="#stopkontakt">Stopkontakt</a></h2>
         </div>
-    </section>
-    <section id="dustbunnies" class="pastprojects-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1>Dustbunnies</h1>
-                </div>
-            </div>
+      </div>
+      <div class="item">
+        <!-- Set the sixth background image using inline CSS below. -->
+        <div class="fill" style="background-image:url('img/StoneSoup1.jpg');"></div>
+        <div class="carousel-caption">
+          <h2><a class="page-scroll" href="#stonesoup">Stone Soup</a></h2>
         </div>
-    </section>
-    <section id="babble" class="pastprojects-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1>Babble</h1>
-                </div>
-            </div>
-        </div>
-    </section>
+      </div>
+    </div>
+
+    <!-- Controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="icon-prev"></span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="icon-next"></span>
+    </a>
+  </header>
 
 
-        <hr>
+  <!-- Navigation -->
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header page-scroll">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand page-scroll" href="#page-top">BOUTIQUE VIZIQUE vzw</a>
+      </div>
 
-        <!-- Footer -->
-        <footer>
-            <div class="row">
-                <div class="col-lg-12">
-                    <p>Copylight &copy; Boutique Vizique 2015</p>
-                </div>
-            </div>
-            <!-- /.row -->
-        </footer>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav">
+          <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+          <li class="hidden">
+            <a class="page-scroll" href="#page-top"></a>
+          </li>
 
-    <!--/div-->
+          <li class="dropdown">
+            <a class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">Current Projects<span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+              
+              <li role="presentation"><a class="page-scroll" role="menuitem" tabindex="-1" href="#einfuhlung">Einfuhlung</a></li>
+              
+
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-expanded="true">Past Projects<span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu2">
+            
+            
+              <li role="presentation"><a class="page-scroll" role="menuitem" tabindex="-1" href="#momento">Momento</a></li>
+              <li role="presentation"><a class="page-scroll" role="menuitem" tabindex="-1" href="#audio-visualizer">Audio-Visualizer: Mattering Messages</a></li>
+            
+              <li role="presentation"><a class="page-scroll" role="menuitem" tabindex="-1" href="#stonesoup">Stone Soup</a></li>
+              <li role="presentation"><a class="page-scroll" role="menuitem" tabindex="-1" href="#lichtbewolkt">Licht Bewolkt</a></li>
+              <li role="presentation"><a class="page-scroll" role="menuitem" tabindex="-1" href="#modusmotus">Modus Motus</a></li>
+              <li role="presentation"><a class="page-scroll" role="menuitem" tabindex="-1" href="#beatblocks">Beat Blocks</a></li>
+              <li role="presentation"><a class="page-scroll" role="menuitem" tabindex="-1" href="#tortuga">Tortuga</a></li>
+              <li role="presentation"><a class="page-scroll" role="menuitem" tabindex="-1" href="#workshops">Workshops</a></li>
+              <li role="presentation"><a class="page-scroll" role="menuitem" tabindex="-1" href="#avperformances">AV performances</a></li>
+              <li role="presentation"><a class="page-scroll" role="menuitem" tabindex="-1" href="#zeppelin">Zeppelin</a></li>
+              <li role="presentation"><a class="page-scroll" role="menuitem" tabindex="-1" href="#dustbunnies">Dustbunnies</a></li>
+              <li role="presentation"><a class="page-scroll" role="menuitem" tabindex="-1" href="#stopkontakt">Stopkontakt</a></li>
+              <li role="presentation"><a class="page-scroll" role="menuitem" tabindex="-1" href="#babble">Babble</a></li>
+              <li role="presentation"><a class="page-scroll" role="menuitem" tabindex="-1" href="#drawplay">Drawplay</a></li>
+            </ul>
+          </li>
+          <li>
+            <a class="page-scroll" href="#about">About</a>
+          </li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+
+    </div>
     <!-- /.container -->
+  </nav>
 
-	
-	
-	
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+  <!-- About Section -->
+  <section id="about" class="section about-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1>Boutique Vizique</h1>
+          <p>... is an artist collective, non-profit organization and a platform for experimentation by Hendrik Leper and Stijn Schiffeleers. Originally drawn together by their early video work, both artists started collaborating on a large number of
+            projects. The result is a series of captivating interactive installations that take you into a world of imagination and gentle technology. Their multimedia works create experiences that playfully challenge our perception of objects and
+            space. Although geographically separated for almost 15 years, both artist kept working together and in 2009 turned their collective into a non-profit organization in support of the media arts.</p>
+          <p>Since 2004, <strong><em>Boutique Vizique</em></strong> has exhibited internationally at museums and media festivals including Matchmaking, Artbots, Beall Art Centre, RX Gallery, M HKA media, Oakland Museum of California and Z33. More
+            recently their focus has shifted towards the local community and projects tend to take place in and around their studio in Ghent, Belgium.</p><br>
+          <p>
+            <strong>Boutique Vizique vzw</strong><br>
+            Bouwmeestersstraat 46<br>
+            9040 St-Amandsberg<br>
+            Belgium<br>
+            vzw[at]boutiquevizique[dot]com<br>
+			BTW BE 0811998381<br>
+			RPR Gent
+            <!-- <span class="glyphicon glyphicon-earphone"></span> +32 477 56 97 23 -->
+          </p><br>
+          <a href="https://vimeo.com/boutiquevizique" target="_blank"><img alt="facebook" src="img/vimeo.svg" width="30" height="30"></a>
+          <a href="https://www.facebook.com/boutiquevizique" target="_blank"><img alt="facebook" src="img/facebook.svg" width="30" height="30"></a>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- Script to Activate the Carousel -->
-    <script>
+  <!-- Projects Section -->
+  
+  
+    <section id="einfuhlung" class="section einfuhlung-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1>Einfühlung <span class="badge badge-bv">2022/2023</span></h1>
+          <p><strong><em>Einfühlung</em></strong> is a project by Piotr Szyhalski / Labor Camp, co-curated by Joseph del Pesco and Boutique Vizique </p>
+          <p>The recently completed Einfühlung series, presented in a lightbox in Ghent in 8 parts starting in March of 2023, follows the artist's collections of short idiomatic phrases, like “seeing eye to eye,” each a metaphor for interpersonal relation and interaction.</p>
+          <p>Einfühlung is a German word that translates as “in-feeling” or “feeling-into”, which originated with Robert Vischer in the late 19th century. This concept eventually became what we now think of as empathy.</p>
+		<p>Each phrase selected by Szyhalski is like a micro-poem, where repetition suggests another person, a second body. The verbs have been withheld, but the phrases still resonate—the action always implied. Animating these phrases, Szyhalski has drawn ethereal characters, that both float in the abyss, and are anchored to one another. This elegantly contoured series is suggestive of the invisible lines between the internal world of the individual and the external dynamics of the social body. With and without a caption, the drawings point to metaphors with social resonance, as we seek new forms of togetherness.</p>
+          
+          <div class="text-center"><a type="button" class="btn btn-bv" href="http://www.boutiquevizique.com/einfuhlung" target="_blank">project page</a></div>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <section id="audio-visualizer" class="section audiovisualizer-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1>Audio-Visualizer: Mattering Messages <span class="badge badge-bv">13/03/2021</span></h1>
+
+          <h3>[EN]</h3>
+          <h3>ONLINE WORKSHOP + PERFORMATIVE EVENT — free</h3>
+          <p>Curious about how vibrations can enable vision, voice and sound into altered state body experiences? Looking to hear and materialize synesthetic patterns without code, only using basic electronics? Join the convergence and open your
+            toolkit to adaptive optics in this free online workshop and performative event.</p>
+          <p>Hosted by <a href="http://ooooo.be">ooooo</a>, a non-exclusive, temporary constellation that initiates, mediates and facilitates projects, abducing thought and reflection on relevant issues.</p>
+          <p><b>When?</b> March 13, 2021. Workshop 14h – 17h, performance 19h.</br>
+            <b>What will we make together?</b> An audio visual diffraction device to transmit sound into image.</br>
+            <b>Who can participate?</b> Open to 8 registrants (multiple users per screen allowed), ages 12+, with a Belgian mailing address.</br>
+            <b>Tech requirements?</b> Home computer with stable internet + sound + webcam.</br>
+            <b>Language?</b> English.</br>
+            <b>Where?</b> Online (broadcasting from the <i><a href="http://wablaf.org">Wablaf?</a></i> studio)</br>
+            <b>How?</b> Register by email (vzw@boutiquevizique.com) with a short motivation for participation by February 22. The selection will be made by end of February. Upon confirmation of registration, a kit containing the necessary assemblage
+            will be delivered at your home.
+          </p>
+
+          <p>Photo documentation <a href="http://boutiquevizique.com/matteringmessages"> here</a>.</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+          <h3>[NE]</h3>
+          <h3>ONLINE WORKSHOP + PERFORMATIEF EVENEMENT — gratis</h3>
+          <p>Ben je benieuwd naar hoe trillingen beeld, stem en geluid mogelijk maken? Wil je synesthetische patronen horen en materialiseren zonder code, maar aan de hand van eenvoudige elektronica? Stroop je mouwen op, open de kit met onderdelen
+            die we je toesturen en vervoeg ons tijdens deze gratis online workshop en het performatieve evenement.</p>
+          <p>Deze workshop wordt gehost door <a href="http://ooooo.be">ooooo</a>, een niet-exclusieve, tijdelijke constellatie die projecten initieert, bemiddelt en faciliteert en daarbij na durft te denken over relevante kwesties.</p>
+          <p><b>Wanneer?</b> 13 maart 2021. Workshop 14u – 17u, performance 19u.</br>
+            <b>Wat gaan we samen maken?</b> Een audiovisueel diffractie apparaat om geluid in beeld om te zetten.</br>
+            <b>Wie kan er deelnemen?</b> Open en gratis voor 8 deelnemers (meerdere gebruikers per scherm en kit toegestaan), vanaf 12 jaar, met een Belgisch postadres.</br>
+            <b>Technische vereisten?</b> Een computer / tablet met stabiel internet + geluid + webcam.</br>
+            <b>Voertaal?</b> Engels.</br>
+            <b>Waar?</b> Online (uitzending vanuit de <i><a href="http://wablaf.org">Wablaf?</a></i> studio)</br>
+            <b>Hoe?</b> Schrijf je in per e-mail (vzw@boutiquevizique.com) met een korte motivatie voor deelname vóór 22 februari. De selectie zal gemaakt worden tegen eind februari. Na bevestiging van inschrijving wordt een kit met het benodigde
+            materiaal bij jouw thuis afgeleverd.
+          </p>
+
+          <p>Foto documentatie <a href="http://boutiquevizique.com/matteringmessages"> hier</a>.</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+
+          <p>With the support of Flanders State of the Art / Met steun van De Vlaamse Gemeenschap</p>
+          <img alt="vo" src="img/logoVO.png" width="160" height="68">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="momento" class="section momento-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1>Momento <span class="badge badge-bv">22/05/2021</span></h1>
+          <h3>[EN]</h3>
+          <p><strong><em>Momento</em></strong> is a neighbourhood project that will result in a collaborative and shared risograph photo album.</p>
+          <p>Going door-to-door in and around Bouwmeesstersstraat (Ghent) we asked people to add one photo to a shared album of memories. We specifically requested (old) printed photographs, not digital. Memorable images that people keep close,
+            within sight or tucked away in a box, ... with a special meaning or just for fun. In addition, we asked everyone for a caption — a phrase to write on the back as a reminder, a little something for the future... MOMENTO!</p>
+          <p>On Saturday May 22nd we will set up a mobile print station at the Boutique Vizique studio — located on the corner of the Bouwmeester- and Klinkkouterstraat underneath the light box — for a performative printing session and window
+            installation, open to the public (social distancing in mind). When finished, every participant will receive a copy of the collective MOMENTO photo album.</p>
+          <p>Initiated by and in collaboration with Topo Copy, a Ghent based ‘openlab-research-center’ for print, zines, paper, copy, ink and art … with a selfpublishing label & library, activities such as workshops, lectures, interventions and
+            expo’s.</p>
+
+          <p>Photo documentation <a href="http://boutiquevizique.com/momento"> here</a>.</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+
+          <h3>[NE]</h3>
+          <p><strong><em>Momento</em></strong> is een buurtproject dat zal resulteren in een gezamenlijk en gedeeld risografisch fotoalbum.</p>
+          <p>Door van deur tot deur te gaan in en rond de Bouwmeesstersstraat (Gent) vroegen we de bewoners om één foto toe te voegen aan een gedeeld album van herinneringen. We vroegen specifiek om (oude) analoog geprinte foto's, geen digitale. Herinneringsvolle beelden die men dichtbij, in het zicht of weggestopt in een doos bewaren, ... met een speciale betekenis of gewoon voor de lol. Bovendien vroegen we iedereen om een ​​onderschrift - een zin om op de achterkant
+          te schrijven als herinnering, iets voor de toekomst ... MOMENTO!</p>
+          <p>Op zaterdag 22 mei zetten we een mobiele printer op in de Boutique Vizique studio - gelegen op de hoek van de Bouwmeester- en Klinkkouterstraat onder de lichtbak - voor een performatieve printsessie en raaminstallatie, open voor het
+          publiek (sociale distancing in gedachten). Na afloop ontvangt elke deelnemer een exemplaar van het collectieve MOMENTO fotoalbum.</p>
+
+          <p>Foto documentatie <a href="http://boutiquevizique.com/momento"> hier</a>.</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+          
+          <p>With the support of Flanders State of the Art / Met steun van De Vlaamse Gemeenschap</p>
+          <img alt="vo" src="img/logoVO.png" width="160" height="68">
+
+          <a href="https://www.topocopy.org/" target="_blank"><img alt="topocopy" src="img/logoTopoCopy.gif" width="160" height="62" hspace="50"></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section id="stonesoup" class="section stonesoup-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1>Stone Soup <span class="badge badge-bv">2010 — 2017</span></h1>
+          <p><strong><em>Stone Soup</em></strong> is a project initiated, curated, produced and funded by Boutique Vizique in collaboration with artist Caroline Vincart. <strong><em> Stone Soup</em></strong> offers artists a platform to present their
+            work in a light box, mounted on a wall in Ghent, Belgium. In an alternating process, each work stays up for a year, placed against a different image every six months. The new work replaces the oldest of the two images, thus creating a new
+            dialogue every time.</p>
+          <div class="text-center"><a type="button" class="btn btn-bv" href="http://www.stonesoup.be" target="_blank">project page</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section id="lichtbewolkt" class="section lichtbewolkt-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1>Licht Bewolkt <span class="badge badge-bv">2014</span></h1>
+          <p><strong><em>Licht Bewolkt</em></strong> is an installation that immerses you in a spatial experience of light and sound by means of 195 RGB led light fixtures spread out as a 13 by 15 grid on the ceiling. Each fixture can be controlled
+            independently allowing for an infinite number of light patterns and low resolution images to be created.</p>
+          <p><strong><em>Licht Bewolkt</em></strong> was developed as a permanent and integrated artwork in the day care centre 'Hoekhuis' in Vlezenbeek in Belgium. Its design is focused on a group of children and young adults with multiple
+            disabilities, yet can be experienced by a wider audience as artistic and authentic. The work reflects a well-considered approach towards the method of therapy through sensory activation.</p>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="modusmotus" class="section modusmotus-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1>Modus Motus <span class="badge badge-bv">2008</span></h1>
+          <p><strong><em>Modus Motus</em></strong> is an interactive installation that tracks the movement of various pendulums and translates its physical energy into an auditive and visual response. Light and sound are generated in real time
+            according to a series of parameters affected and controlled by the user, resulting in a spatial experience that fluctuates constantly.</p>
+          <!-- <div class="text-center"><a type="button" class="btn btn-bv" href="http://boutiquevizique.com/modusmotus" target="_blank">project page</a></div> -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="beatblocks" class="section beatblocks-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1>Beat Blocks <span class="badge badge-bv">2007</span></h1>
+          <p><strong><em>Beat Blocks</em></strong> is a tangible interface for a rhythm sequencer. The user is able to create and manipulate an multi-track loop on the fly by physically re-arranging blocks within a matrix. Each block is actually a
+            sub-sequence identified by a patterning scheme. This allows the user to quickly identify what the sub-sequence is and place it within the composition in one motion, an action that would otherwise take several steps with a screen and
+            mouse/trackpad interface. The device can be integrated directly into a MIDI setup or communicate with a computer via MIDI or Open Sound Control. </p>
+          <p>Concept and development in collaboration with <a href="http://www.jeffhoefs.com/" target="_blank">Jeff Hoefs</a>.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="tortuga" class="section tortuga-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1>Tortuga <span class="badge badge-bv">2006</span></h1>
+          <p><strong><em>Tortuga</em></strong> is a conceptual reactive installation that emphasizes the explorers' own behavior and doesn't require a predefined way of interaction. It exists of two icebergs which can be pushed slowly across the
+            floor. A sudden push or brutish interaction will result in a complete stop.</p>
+          <p>Presented at a group show called Fertile Grounds at RX Gallery, San Francisco, USA</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="workshops" class="section workshops-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1>Workshops <span class="badge badge-bv">ongoing</span></h1>
+          <p>Throughout the years we have been taught workshops focussed on introducing the basic concepts, tools, methods and resources available for making interactive projects. Covered areas included: basic electronics, physical computing,
+            audio-visual programming, Max/MSP/Jitter, MakingThings' Teleo, Arduino and general project development tips and techniques.</p>
+          <p>Locations and venues included the Exploratorium, San Francisco, USA; San Francisco Art Institute; Department of Architecture, Buffalo USA; Stanford University, Palo Alto, USA; University of Oregon, Eugene USA; Fabrica, Treviso, Italy;
+            Nadine, Brussels Belgium.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="avperformances" class="section avperformances-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1>AV performances <span class="badge badge-bv">ongoing</span></h1>
+          <p>Since 2000 we have been part of a wide range of distinct audiovisual projects, either by independently exploring the boundaries of live AV performance or through cross-disciplinary collaborative processes.</p>
+          <p>In fact, <strong><em>Boutique Vizique</em></strong> germinated from a project with two DJ's and this collaborative aspect became a natural ingredient in our practice and resulted in co-productions with multiple bands, record labels,
+            dance and theater companies, and an opera.</p>
+          <p>Our focus lay in producing realtime live generated images and sound, using homemade AV treatment patches in the Max/Msp/Jitter programming environment.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="zeppelin" class="section zeppelin-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1>Zeppelin <span class="badge badge-bv">2004</span></h1>
+          <p>In 2004, Antwerp was chosen to be World Book Capital, which resulted in an impressive mix of book fairs, literary events, libraries, archives and professional organizations among others. One of the ABC2004 projects - City of Letters -
+            put the alphabet to the test. Twenty-six writer/artist tandems explored the limits and possibilities of one letter; the starting point of a new, joint work of art. Throughout 2004-2005, the various results got unveiled at major literary
+            events in the city, in any number of forms. The twenty-six big bangs were recorded for future generations in as many cahiers: exclusive publications in which the tandems are introduced, the evolution of their creations documented and the
+            work (plus its traces) highlighted from a variety of angles.'</p>
+          <p>Together with <a href="http://www.ramseynasr.nl" target="_blank">Ramsey Nasr</a>, Antwerp's city poet, we decided that 'Z' stands for Zeppelin! The text and the cahier partly focussed on the traject history of Count Zeppelin, who gave
+            his name to his life work - a flying cigar - which forever will be associated with terror and destruction. Other chapters in the cahier contained information about the pioneers of balloon flight, Lawn chair Larry and a fictitious love
+            letter from the Hindenburg. At the opening of the new library, we dressed up in our captain outfits, wearing a big white mustache as a ode to the count. The official guest speakers (among them the major of Antwerp and national minister of
+            Culture) got asked to leave the stage and to put on a mustache, just like everybody else in the audience; making us all equal dreamers. This also got reflected in the zeppelin backpacks we created. These devices were presented as a model
+            for everyday life zeppelin usage; in contrast to the expensive flights for the upper class a century ago. Whenever needed, turning on your backpack makes it a silent, bio-friendly mode of transportation; giving you an exquisite three
+            dimensional freedom of movement. While presenting them a big zeppelin - carrying our logo - rose behind us; opening the new library to all the people of Antwerp.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section id="dustbunnies" class="section dustbunnies-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1>Dustbunnies <span class="badge badge-bv">2004</span></h1>
+          <p><strong><em>Dustbunnies</em></strong> is a small colony of digital dust balls that scan the space in search of crumbs of lost thoughts, emotions and dreams. They are a group of LoFi amoeba addicted to a past caught in flakes of skin and
+            hair, in dust and in dirt. is an interactive artwork that allows both individual and multi-user interaction. As a reflection of human social behaviour, this collection of separate, but similar interfaces behaves as a group itself.
+            Technically the <strong><em>Dustbunnies</em></strong> are seven ball shaped, soft sculptures that contain a whole set of electronic components which allows them to communicate to each other while being touched by users.</p>
+          <p>Presented at at FEEL the young, Hasselt; Bazuco Super Mercado, Vooruit Ghent; Spinrag festival, Neerpelt and Leuven ; Five (5) Irvine USA ; and Muhka, Antwerp; Trondheim Matchmaking festival, Norway; Artbots, Ghent; Alles in Wonderland,
+            Turnhout; LAB30, Augsburg, Germany; ElectroFringe, Newcastle, Australia.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="stopkontakt" class="section stopkontakt-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1>Stopkontakt <span class="badge badge-bv">2004</span></h1>
+          <p><strong><em>Stopkontakt</em></strong> is a reactive installations that focus on making physical contact with others. Its interface consists of several 'electron' and 'proton' shaped cartoon like characters, spread out in the space. These
+            'contact points' invite you to close several electrical circuits, using your body as a conductor between them. Once a connection (= Kontakt) is made it results in a physical and/or auditive output. For example: a record player starts to
+            play a few good old tunes, a light get turned on, drops of water start falling from the ceiling and make a sound, ...</p>
+          <p>Depending on the location, we change the interface accordingly. Walls, staircases and sinks become part of the installation as they are turned into touch points, which results in a very spatial experience. The piece celebrates
+            collaboration and cooperation, as a singular visitor can't close all the possible circuits alone. Explore the possibilities and hold hands, touch you neighbours nose or find a piece of metal.</p>
+          <p>Presented at Les Chants Mechaniques, Lille, France; Garage Festival, Stralsund, Germany; Oorsmeer in Gent, Lille, Amersfoort, Antwerp and Hasselt; Spinrag in Neerpelt and Leuven; Happy New Ears in Kortrijk; nowHere, Z33 Hasselt; The Ever
+            Mass Land, Nadine, Brussels; Oakland Museum of California, Oakland USA; Ciné Kadee, Gent, Belgium.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="babble" class="section babble-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1>Babble <span class="badge badge-bv">2003</span></h1>
+          <p><strong><em>Babble</em></strong> is an audiovisual installation for kids. By pushing one of the seven buttons on a capture unit every little visitor can record a sound and video loop. After recording, the video appears (faded and quiet)
+            in the projection. On a separate unit 7 pressure sensitive buttons correspond to 7 buoys hanging from the ceiling. If nobody pushes the pressure pads there is only a whispering in the room. All video and sound is faded. If you push a pad
+            the projected face on the buoy will clear up and singing will become louder. By stepping on and off the pads compositions can be made with this AV choir.... </p>
+          <p>Presented at Yo festival Utrecht, Oorsmeer Gent, Antwerp, Lille, Bern, Zurich, Winterthur, Amersfoort; Bronks in Brussels; Youth film festival, Bruges and Happy New Ears in Kortrijk.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="drawplay" class="section drawplay-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1>Drawplay <span class="badge badge-bv">2003</span></h1>
+          <p><strong><em>Drawplay</em></strong> is a physical sequencer that generates audio and reveals video according to the visitors' drawing on a touchscreen imbedded in a soft bench. The installation allows for multiple people interacting
+            simultaneous; and each drawing gets instantaneously scanned and translated into new sounds that pan around the space.</p>
+          <p>Presented at Dorkbot, Nieuwpoorttheater Gent; One Minute Performances Transmedia BSB bis, Brussel; Artefact Kunstencentrum Stuk, Leuven; Happy New Ears, Kortrijk; and Yerba Buena Centre for the Arts, San Francisco.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <hr>
+
+  <!-- Footer -->
+  <footer>
+    <div class="row">
+      <div class="col-lg-12">
+        <p class="text-center"><small>Copylight &copy; Boutique Vizique 2015</small></p>
+      </div>
+    </div>
+    <!-- /.row -->
+  </footer>
+
+  <!--/div-->
+  <!-- /.container -->
+
+
+
+
+  <!-- jQuery -->
+  <script src="js/jquery.js"></script>
+
+  <!-- Bootstrap Core JavaScript -->
+  <script src="js/bootstrap.min.js"></script>
+
+  <!-- Script to Activate the Carousel -->
+  <script>
     $('.carousel').carousel({
-        interval: 5000 //changes the speed
+      interval: 5000 //changes the speed
     })
-    </script>
-	
-	<!-- Scrolling Nav JavaScript -->
-    <script src="js/jquery.easing.min.js"></script>
-    <script src="js/scrolling-nav.js"></script>
+  </script>
+
+  <!-- Scrolling Nav JavaScript -->
+  <script src="js/jquery.easing.min.js"></script>
+  <script src="js/scrolling-nav.js"></script>
 
 </body>
 

@@ -1,0 +1,313 @@
+/* ======================== CSS Reset ====================== */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend caption { 
+	margin:0; 
+	padding:0; 
+	border:0; 
+	outline:0; 
+	font-weight:inherit; 
+	font-style:inherit; 
+	font-size:100%; 
+	font-family:inherit; 
+	vertical-align:baseline;
+	}
+	
+:focus {
+	outline:0;
+	}
+
+ol, ul {
+	list-style:none;
+	}
+
+blockquote:before, blockquote:after, q:before, q:after {
+	content:"";
+	}
+
+blockquote, q {
+	quotes:"" "";
+	}
+
+strong {
+	font-weight:bold;
+	}
+	
+em {
+	font-style:italic;
+	}
+
+a {
+	text-decoration:none; 
+	cursor:pointer;
+	}
+
+body{
+	font-family: Georgia, "Times New Roman", Times, serif;
+	overflow:hidden;
+	}
+
+
+/* ======================== ID-based selectors ====================== */
+/*  positioning-layers static & absolute */
+
+#header{
+	margin-bottom: 0px;
+	margin-top: 1em;
+	z-index: 1;
+	margin-left: auto;
+	margin-right: auto;
+	padding:0px;
+	position:relative;
+	}
+
+#uberbox {
+	width: 98%;
+	z-index: 2;
+	margin-left: auto;
+	margin-bottom: 0px;
+	margin-right: auto;
+	margin-top: -1.8em;
+	border-color: #bfb643;
+	border-width: 1px;
+	border-style: dotted;
+	padding:0px;
+	text-align:left;
+	overflow: auto;
+	}
+
+#page{
+    width: 1000px;
+	margin-left: auto;
+	margin-bottom: 0px;
+	margin-right: auto;
+	margin-top: 2.5em;
+	padding:0px;
+	text-align:left;
+	}
+
+#head {
+	text-align: center;
+	background-color:transparent;
+	}
+
+#slider{
+	margin:0 auto;
+ 	position:relative;
+	}
+
+
+#right {
+	width: 251px;
+	float:left;
+	}
+
+
+/* ======================== class-based selectors ====================== */
+
+.topnav {
+	font-size: 0.9em;
+	padding-left: 5%;
+	padding-right: 0em;
+	padding-top: 0.2em;
+	padding-bottom: 0.1em;
+	color: black;
+	background-color: white;
+	text-align: left;
+	font-family: Helvetica, Verdana, Arial, sans-serif;
+/*
+	filter:alpha(opacity=90);
+	opacity:.90;
+	-moz-opacity: 0.95;
+*/
+}
+
+ul.topnav > li {
+	letter-spacing: 0.1em;
+	display: inline;
+	list-style-type: none;
+	font-size: 1em;
+}
+	
+ul.topnav > li > a {
+	font-weight: bold;
+	color: black;
+	text-decoration: none;
+}
+	
+ul.topnav > li > a:hover {
+	border-bottom-width: 1px;
+	padding-bottom: 4px;
+	border-bottom-color: white;
+	border-bottom-style: dotted;
+	color: #21291d;
+}
+
+
+.topnavselected {
+	font-weight: bold;
+	padding-bottom: 4px;
+	border-bottom-color: #4f920c;
+	border-bottom-width: 1px;
+	border-bottom-style: dotted;
+		
+	}
+
+#page .scroll{
+	height:480px;
+	width:700px;
+	margin:0 auto;
+	overflow:auto;
+	position:relative;
+	clear:left;
+	float:left;
+}
+
+#page .scrollContainer .panel{
+	font-family: Helvetica, Verdana, Arial, sans-serif;
+	padding:0;
+	margin:0;
+	height:480px;
+	width:701px;
+	overflow:hidden;
+/*	clear: left; /* vertical scroll */
+
+/*
+			filter:alpha(opacity=90);
+			opacity:.90;
+			-moz-opacity: 0.95;
+*/	
+}		
+
+#page .panel table{
+	margin-top: -4px;
+	border: 0;
+	}
+
+#page .panel tr{	
+}
+
+#page .panel td{
+	padding-top: 1em;
+	width: 220px;
+	background-color: white;
+	text-align: center;
+}
+		
+#page .panel p{
+	background-color: white;
+	font-size: 0.8em;
+	margin: 0px 2px 0px 0px;
+	padding: 1em;
+	text-align: left;
+}
+	
+#page .video{
+	background-color: white;
+	font-size: 0.8em;
+	padding: 6px 6px 3px 6px;
+	text-align: center;
+}
+
+#page .panel h3{
+	padding: 0.5em;
+	margin-top: 0.3em;
+	background-color: white;
+	font-size: 1.2em;
+	color:#000;
+	font-weight:bold;
+}
+
+			
+#page .panel a{
+	color: black;
+	border-bottom: 1px;
+	border-bottom-style: dotted;
+	border-bottom-color: black;
+}
+				
+#page .panel a:hover{
+	color: black;
+	border-bottom: 1px;
+	border-bottom-style: dotted;
+	border-bottom-color: #049dd9;
+}
+
+#page .navigation{
+		color: white;
+		margin:6px 0 0 40px;
+		font-weight: bold;
+		}
+		
+#page .navigationp{
+		margin:1px 0 5px 40px;
+		font-family: Helvetica, Verdana, Arial, sans-serif;
+		padding: 5px;
+		font-size: 0.7em;
+		color: #444444;
+		background-color: white;
+		}
+	
+
+#page #right li{
+	line-height: 0.9em;
+		}
+
+	
+#page .navigation a{
+		font-size: 0.9em;
+		color: white;
+		text-decoration: none;
+		}
+		
+#page .navigation a:hover,
+#page .navigation a.selected{
+		color: #049dd9;
+		text-decoration: none;
+		font-size: 0.9em;
+		}
+
+#page .geennavigation{
+		color: white;
+		padding:6px 0 0 40px;
+		font-weight: bold;
+		}
+		
+#page .geennavigationp {
+		font-family: Helvetica, Verdana, Arial, sans-serif;
+		padding: 5px;
+		font-size: 0.7em;
+		color: #2f2f2f;
+		background-color: white;
+		}
+		
+#page .geennavigationpsansbg {
+		padding: 5px;
+		margin:1px 0 5px 40px;
+		font-family: Helvetica, Verdana, Arial, sans-serif;
+		font-size: 0.7em;
+		color: #d2d2d2;
+		background-color: transparent;
+		}
+		
+#page .geennavigationp a{
+		color: black;
+		font-size: 0.9em;
+		text-decoration: none;
+		}
+		
+#page .geennavigationp a:hover,
+#page .geennavigationp a.selected
+#page .geennavigationp a.visited{
+		color: #049dd9;
+		text-decoration: none;
+		font-size: 0.9em;
+		}
+
+
+#page .geennavigationit {
+		font-style: italic;
+		font-size: 0.8em;
+		color: #7d7d7d;
+		text-decoration: none;
+		}
+
+

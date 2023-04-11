@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport" />
+    <title>Simple Lightbox - Responsive touch friendly Image lightbox</title>
+    <link rel="stylesheet" href="lb/simple-lightbox.css" />
+  </head>
+  <body>
+    <h1>test</h1>
+    <div class="gallery1">
+      <a href="images/full/1.jpg"><img src="images/thumb/1.jpg" alt="" title="image 1" /></a>
+      <a href="images/full/2.jpg" style="display: none"><img src="images/thumb/2.jpg" alt="" title="image 1b" /></a>
+    </div>
+    <div class="gallery2">
+      <a href="images/full/3.jpg"><img src="images/thumb/3.jpg" alt="" title="image 2" /></a>
+      <a href="images/full/4.jpg" style="display: none"><img src="images/thumb/4.jpg" alt="" title="image 2b" /></a>
+    </div>
+
+    <script src="lb/simple-lightbox.jquery.js"></script>
+    <script>
+      (function () {
+        var $gallery1 = new SimpleLightbox(".gallery1 a", {});
+        var $gallery2 = new SimpleLightbox(".gallery2 a", {});
+      })();
+    </script>
+  </body>
+</html>

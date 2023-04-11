@@ -12,15 +12,37 @@ html {
 	height: 100%;
 	width: 100%;
 	font-size: @font-size-root;
+    word-spacing: 1px;
+    letter-spacing: 0.2px;
 }
 
 body {
     height: 100%;
 	width: 100%;
 	font-family: Lora,"Helvetica Neue",Helvetica,Arial,sans-serif;
-	
-	_margin-top: 50px; /* Required margin for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+	background: #000000;
+	margin-top: 50px; /* Required margin for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
 }
+
+
+p , h1, h2, h3, h4, h5 address {
+    color: white;
+}
+
+
+@media (max-width:768px) {
+    p, address {font-size: 12px;}
+    h1 {font-size: 36px;}
+    h3 {font-size: 20px;}
+}
+
+@media (min-width:767px) {
+    p, address {font-size: 15px;}
+    h1 {font-size: 45px;}
+    h3 {font-size: 20px;}
+}
+
+
 
 .navbar {
 	font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -35,6 +57,25 @@ body {
 .carousel-inner {
     height: 100%;
 }
+
+.carousel-caption a:link,
+.carousel-caption a:active,
+.carousel-caption a:visited {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.carousel-caption a:hover,
+.carousel-caption a:focus {
+    color: white;
+    text-decoration: none;
+    font-size: 26px;
+}
+
+
+
+
 
 /* Background images are set within the HTML using inline CSS, not here */
 
@@ -69,7 +110,6 @@ body {
 	margin: 0 auto;
 }
 
-
 .section-heading {
     margin: 30px 0;
     font-size: 4em;
@@ -85,89 +125,229 @@ body {
 
 
 @media(max-width:768px) {
-    section {
+    .section {
         padding-top: 25px;
         padding-bottom: 25px;
     }
-
     .section-heading {
         font-size: 2em;
     }
 }
 
-section {
+.section {
     padding: 75px 0;
 }
 
-footer {
+.footer {
     margin: 50px 0;
 }
+
 
 @media(min-width:767px) {
     .navbar {
         padding: 5px 0;
 		background-color: transparent;
-		color: white;
+		color: #696969;
 		border-bottom-color: transparent;
         -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
         -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
         transition: background .5s ease-in-out,padding .5s ease-in-out;
     }
-
     .top-nav-collapse {
         padding: 0;
 		color: black;
 		background-color: inherit;
-		border-bottom-color: inherit;
+		border-bottom-color: #000;
     }	
 }
 
 
 .navbar-default .navbar-brand {
-  		color: #e0e0e0;
-	}
-
-.navbar-default .navbar-nav > li > a {
-  		color: #e0e0e0;
-	}
-
-.navbar-default .navbar-nav > li > a:hover{
   		color: #fff;
 	}
 
+.navbar-default .navbar-brand:hover {
+  		color: #fff146;
+	}
+
+.navbar-default .navbar-nav > li > a {
+  		color: #fff;
+	}
+
+.navbar-default .navbar-nav > li > a:hover{
+  		color: #fff146;
+	}
+
+@media(max-width:768px) {
+    .navbar {
+        padding: 5px 0;
+		background-color: inherit;
+		color: #696969;
+		border-bottom-color: transparent;
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+    }
+    .top-nav-collapse {
+        padding: 0;
+		color: black;
+		background-color: inherit;
+		border-bottom-color: #000;
+    }
+        
+    .navbar-default .navbar-nav > li > a {
+  		color: #fff;
+	}
+}
 
 /* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
 The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children 
 of those sections to manage the look and feel of the site. */
 
-
-.about-section {
-    height: 100%;
-    padding-top: 150px;
+.section {
+    height: auto;
     text-align: left;
-    background: #6dd9d9;
+    min-height: 600px;
 }
 
-.pastprojects-section {
-    height: 100%;
-    padding-top: 150px;
-    text-align: center;
-    background: #fff;
+.section p a:link, 
+.section p a:visited, 
+.section p a:active {
+    color: white;
+    border-bottom: 1px dotted white;
+    text-decoration: none;
+}
+
+.section p a:hover,
+.section p a:focus {
+    color: #fff146;
+    text-decoration: none;
+    border-bottom: 1px dotted #fff146;
+}
+
+.about-section {
+    background: url('../img/s&h.jpg') no-repeat;
+    background-size: cover;
+}
+
+
+.einfuhlung-section {
+	background: url('../img/Einfuhlung.jpg') no-repeat;
+    background-size: cover;
+}
+
+.audiovisualizer-section {
+	background: url('../img/AudioVizualizer.jpg') no-repeat;
+    background-size: cover;
+}
+
+.momento-section {
+	background: url('../img/Momento2.jpg') no-repeat;
+    background-size: cover;
+}
+
+
+.lichtbewolkt-section {
+	background: url('../img/LichtBewolkt1.jpg') no-repeat;
+    background-size: cover;
 }
 
 .stonesoup-section {
-    height: 100%;
-    padding-top: 150px;
-	background: url('../img/StoneSoup4.jpg') no-repeat center center scroll;
-    padding: 100px 0;
-	_text-align: left;
+	background: url('../img/StoneSoup4.jpg') no-repeat;
+    background-size: cover;
 }
 
-.lichtbewolkt-section {
-    height: 100%;
-    padding-top: 150px;
-	background: url('../img/LichtBewolkt1.jpg') no-repeat center center scroll;
-    padding: 100px 0;
-	text-align: left;
+.modusmotus-section {
+	background: url('../img/ModusMotus2.jpg') no-repeat;
+    background-size: cover;
 }
 
+.beatblocks-section {
+	background: url('../img/BeatBlocks2.jpg') no-repeat;
+    background-size: cover;
+}
+
+.tortuga-section {
+	background: url('../img/Tortuga2.jpg') no-repeat;
+    background-size: cover;
+}
+
+.workshops-section {
+	background: url('../img/Workshops.jpg') no-repeat;
+    background-size: cover;
+}
+
+.avperformances-section {
+	background: url('../img/AVperformances.jpg') no-repeat;
+    background-size: cover;
+}
+
+.zeppelin-section {
+	background: url('../img/Zeppelin1.jpg') no-repeat;
+    background-size: cover;
+}
+
+.dustbunnies-section {
+	background: url('../img/Dustbunnies2.jpg') no-repeat;
+    background-size: cover;
+}
+
+.stopkontakt-section {
+	background: url('../img/StopKontakt2.jpg') no-repeat;
+    background-size: cover;
+}
+
+.babble-section {
+	background: url('../img/Babble02.jpg') no-repeat;
+    background-size: cover;
+}
+
+.drawplay-section {
+	background: url('../img/Drawplay2.jpg') no-repeat;
+    background-size: cover;
+}
+
+.btn-bv {
+    margin-top: 30px;
+  color: #fff;
+  background-color: rgba(255,255,255,0.1); 
+  border-color: #fff;
+  box-shadow: 1px 1px 5px #888888;
+}
+
+.btn-bv:hover,
+.btn-bv:focus {
+  background-color: rgba(255,255,255,0.2);  
+  border-color: #fff146;
+}
+
+.btn-bv a:link,
+.btn-bv a:visited,
+.btn-bv a:active {
+    color: white;
+    text-decoration: none;
+}
+
+.btn-bv a:hover,
+.btn-bv a:focus {
+    color: #fff146;
+    text-decoration: none;
+}
+
+
+.label-bv {
+  background-color: #337ab7;
+}
+.label-bv[href]:hover,
+.label-bv[href]:focus {
+  background-color: #286090;
+}
+
+.badge-bv {
+  text-align: right;
+  margin: 0 0 0 15px;
+  font-weight: normal;
+  color: #fff;
+  background-color: rgba(255,255,255,0.1);
+  border-radius: 5px;
+}

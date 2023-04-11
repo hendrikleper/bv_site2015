@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+	<channel>
+	    <title>boutique vizique</title>
+	    <link>http://www.boutiquevizique.com/hik/testing/MM_design/feed/index.xml</link>
+	    <description>boutique vizique - news feed</description>
+	    <language>en-us</language>
+	        <item>
+			<title>Modus Motus</title>
+			<link>http://www.boutiquevizique.com/modusmotus/</link>
+			<description><![CDATA[Modus Motus will play a part in a performance with <a href='http://www.triatu.be/'>Triatu</a>, a percussion ensemble. A first draft will be presented on June 7th in <a href='http://www.denblank.be/'>Den Blank</a>, Overijse]]></description>
+			<pubDate>Thu, 16 Apr 2009</pubDate> 
+			<category>Modus Motus</category>
+			<guid isPermaLink="false">news32</guid>   
+	    </item>
+    	<item>
+			<title>Modus Motus</title>
+			<link>http://www.boutiquevizique.com/modusmotus/</link>
+			<description><![CDATA[You can still go, play and enjoy Modus Motus in <a href="http://www.dharts.be" target="_blank">Destelheide</a>, Dworp. But don't forget to drop the Gate Fairy Lies Jacob a line first. <br />phone nr +32 (0)2 380 39 15]]></description>
+			<pubDate>Thu, 11 Dec 2008</pubDate> 
+			<category>Modus Motus</category>
+			<guid isPermaLink="false">news31</guid>   
+	    </item>
+	</channel>
+</rss>

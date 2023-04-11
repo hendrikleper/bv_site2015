@@ -1,0 +1,260 @@
+<html>
+<head lang="en">
+    <title>boutique vizique | Einfühlung</title>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lb/simple-lightbox.css" />
+    <style>
+
+@font-face {
+    font-family: "Compagnon";
+    src: url("webfonts/Compagnon-Medium.woff2") format('woff2');
+  }
+
+* {
+    margin: 0; padding: 0;
+    font-family: "Compagnon", sans-serif;
+}
+body {
+    background-color: white;
+}
+
+.title {
+    margin: 10px auto;
+    width:40%;
+    position: relative;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%) translateY(5%);
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.myButton {
+    position: fixed;
+    bottom: 10px;
+    left: 15px;
+    border: none;
+    padding: 2px;
+	background-color:transparent;
+	display:inline-block;
+	cursor:pointer;
+    xfont-size: 3em;
+	xtext-shadow:1px 1px 0px #999;
+}
+.myButton:hover {
+	opacity: 0.7;
+    xposition:fixed;
+	xbottom:11px;
+    xleft:11px;
+    xtext-shadow:0px 0px 0px #999;
+}
+
+.myButton > img {
+    width: 32px;
+}
+
+.parent {
+display: grid;
+grid-template-columns: repeat(5, 1fr);
+grid-template-rows: repeat(5, 1fr);
+grid-column-gap: 10px;
+grid-row-gap: 10px;
+margin: 20px;
+}
+
+.div1 { grid-area: 1 / 1 / 2 / 2; }
+.div2 { grid-area: 1 / 2 / 2 / 3; }
+.div3 { grid-area: 2 / 2 / 3 / 3; }
+.div4 { grid-area: 2 / 3 / 3 / 4; }
+.div5 { grid-area: 3 / 3 / 4 / 4; }
+.div6 { grid-area: 3 / 4 / 4 / 5; }
+.div7 { grid-area: 4 / 4 / 5 / 5; }
+.div8 { grid-area: 4 / 5 / 5 / 6; }
+.div9 { grid-area: 5 / 5 / 6 / 6; }
+
+.kid {
+    background-color: black;
+    color: white;
+}
+
+.thumb > img {
+  object-fit: cover;
+  width: 100%;
+  max-height: 100%;
+}
+
+#myInfo {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 1.1em;
+    margin: 50px;
+    padding: 50px;
+    background-color: rgba(254, 172, 197, 0.925);
+    column-count: 2;
+    column-gap: 40px;
+    column-rule: 1px solid black;
+}
+
+#myInfo p, #myInfo blockquote {
+    padding: 10px 0 30px 0;
+}
+
+#myInfo blockquote {
+    font-style: oblique;
+}
+
+#myInfo button {
+    position: absolute;
+    right: 20;
+    top: 0;
+    border: 0 none;
+    background: transparent;
+    font-size: 40px;
+    padding: 0;
+    cursor: pointer;
+    
+}
+#myInfo button:hover {
+      opacity: 0.7; 
+    }
+
+@media only screen and (max-width: 800px) {
+    .title {
+        width:60%;
+    }
+    #myInfo {
+        column-count: 1;
+        margin: 20px;
+        padding: 10px;
+    }
+    #myInfo p {
+        padding: 10px 0;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .title {
+        width:80%;
+    }
+
+    #myInfo {
+        font-size: 1.0em;
+    }
+}
+
+</style>
+</head>
+
+<body>
+    <a class="myButton" onclick="myFunction()"><img src="images/i.svg"></a>
+    <img class="title" src="images/einfuhlung.svg">
+    <div id="myInfo">
+        <p><button onclick="myFunction()">&times;</button></p>
+        
+	<p style="text-align: center; font-size:130%;">"Einfühlung"</br>
+	Piotr Szyhalski / Labor Camp</br>
+	2022/2023
+	</p>        
+
+
+        
+        <blockquote>“Empathy is not simply a matter of trying to imagine what others are going through, but having the will to muster enough courage to do something about it. In a way, empathy is predicated upon hope.”
+        — Cornel West</blockquote>
+        <p><a href="https://www.weareworkingallthetime.org/" style="color: grey; text-decoration:none;">Piotr Szyhalski</a> is a Polish born, US based artist compelled by the possibility of collective social transformation, an interest in the history of public messaging and signage, and hope. Szyhalski was thinking about the “capacity of art to be an empathetic space,” and sketched the ideas that led to this series and posted them online in early 2022. The recently completed <i>Einfühlung</i> series, presented in a lightbox in Ghent in 8 parts starting in March of 2023, follows the artist's collections of short idiomatic phrases, like “seeing eye to eye,” each a metaphor for interpersonal relation and interaction.
+        </br></br>
+         Einfühlung is a German word that translates as “in-feeling” or “feeling-into”, which originated with Robert Vischer in the late 19th century. This concept eventually became what we now think of as empathy.
+        
+        </br></br>
+        
+        Each phrase selected by Szyhalski is like a micro-poem, where repetition suggests another person, a second body. The verbs have been withheld, but the phrases still resonate—the action always implied.  Animating these phrases, Szyhalski has drawn ethereal characters, that both float in the abyss, and are anchored to one another. This elegantly contoured series is suggestive of the invisible lines between the internal world of the individual and the external dynamics of the social body. With and without a caption, the drawings point to metaphors with social resonance, as we seek new forms of togetherness.</br></br>
+        
+        Co-curated by <a href="http://pleaseteleport.me/" style="color: grey; text-decoration:none;">Joseph del Pesco</a> and Boutique Vizique.</br></br>
+        Many thanks to vinyl-wrestler Lieselot Van Daele.</br> 
+        <a href="http://velvetyne.fr/fonts/compagnon" style="color: grey; text-decoration:none;">Compagnon Medium</a> font by Sébastien Riollier.</p>
+        </p>
+         
+    </div>
+<div class="parent">
+<div class="kid div1"><div class="gallery1">
+    <a href="images/full/1.png" class="thumb"><img src="images/thumb/1.png" /></a>
+    <a href="images/full/1b.png" style="display: none"></a>
+    <a href="images/full/1c.png" style="display: none"></a>
+    <a href="images/full/1d.png" style="display: none"></a>
+    <a href="images/full/1e.png" style="display: none"></a>
+    <a href="images/full/1f.png" style="display: none"></a>
+    <a href="images/full/1g.png" style="display: none"></a>
+    <a href="images/full/1h.png" style="display: none"></a>
+    <a href="images/full/1i.png" style="display: none"></a>
+    
+    
+</div></div>
+<div class="kid div2"><div class="gallery2">
+    <a href="images/full/2.png" class="thumb"><img src="images/thumb/2.png" /></a>
+    <a href="images/full/2b.png" style="display: none"></a>
+    <a href="images/full/2c.png" style="display: none"></a>
+    <a href="images/full/2d.png" style="display: none"></a>    
+    <a href="images/full/2e.png" style="display: none"></a>
+</div></div>
+
+<div class="kid div3"><div class="gallery3">
+    <a href="images/full/3_coming.png" class="thumb"><img src="images/thumb/empty_wh.png" /></a>
+</div></div>
+
+<div class="kid div4"><div class="gallery4">
+    <a href="images/full/4_coming.png" class="thumb"><img src="images/thumb/empty_wh.png" /></a>
+</div></div>
+
+<div class="kid div5"><div class="gallery5">
+    <a href="images/full/5_coming.png" class="thumb"><img src="images/thumb/empty_wh.png" /></a>
+</div></div>
+
+<div class="kid div6"><div class="gallery6">
+    <a href="images/full/6_coming.png" class="thumb"><img src="images/thumb/empty_wh.png" /></a>
+</div></div>
+<div class="kid div7"><div class="gallery7">
+    <a href="images/full/7_coming.png" class="thumb"><img src="images/thumb/empty_wh.png" /></a>
+</div></div>
+
+<div class="kid div8"><div class="gallery8">
+    <a href="images/full/8_coming.png" class="thumb"><img src="images/thumb/empty_wh.png" /></a>
+</div></div>
+
+<div class="kid div9"><div class="gallery9">
+    <a href="images/full/9_coming.png" class="thumb"><img src="images/thumb/empty_wh.png" /></a>
+</div></div>
+
+</div>
+
+<script src="lb/simple-lightbox.js"></script>
+<script>
+    function myFunction() {
+  var x = document.getElementById("myInfo");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+
+<script>
+      (function () {
+        var $gallery1 = new SimpleLightbox(".gallery1 a", {});
+        var $gallery2 = new SimpleLightbox(".gallery2 a", {});
+        var $gallery3 = new SimpleLightbox(".gallery3 a", {});
+        var $gallery4 = new SimpleLightbox(".gallery4 a", {});
+        var $gallery5 = new SimpleLightbox(".gallery5 a", {});
+        var $gallery6 = new SimpleLightbox(".gallery6 a", {});
+        var $gallery7 = new SimpleLightbox(".gallery7 a", {});
+        var $gallery8 = new SimpleLightbox(".gallery8 a", {});
+        var $gallery9 = new SimpleLightbox(".gallery9 a", {});
+        
+      })();
+</script>
+
+</body>
+</html>

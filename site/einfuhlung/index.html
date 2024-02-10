@@ -2,9 +2,15 @@
 <head lang="en">
     <title>boutique vizique | Einfühlung</title>
     <meta charset="UTF-8">
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="lb/simple-lightbox.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/fav/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/fav/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/fav/favicon-16x16.png">
+    <link rel="manifest" href="images/fav/site.webmanifest">
+    <link rel="mask-icon" href="images/fav/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
     <style>
 
 @font-face {
@@ -18,6 +24,7 @@
 }
 body {
     background-color: white;
+    scroll-behavior: smooth;
 }
 
 .title {
@@ -31,24 +38,33 @@ body {
     max-height: 100%;
 }
 
+.subtitle {
+    width: 75%;
+    margin: 30px auto;
+}
+
+.subtitle a {
+    color: black;
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+}
+
+.subtitle a:hover {
+    text-decoration: none;
+}
+
 .myButton {
     position: fixed;
     bottom: 10px;
-    left: 15px;
+    left: 19px;
     border: none;
     padding: 2px;
 	background-color:transparent;
 	display:inline-block;
 	cursor:pointer;
-    xfont-size: 3em;
-	xtext-shadow:1px 1px 0px #999;
 }
 .myButton:hover {
 	opacity: 0.7;
-    xposition:fixed;
-	xbottom:11px;
-    xleft:11px;
-    xtext-shadow:0px 0px 0px #999;
 }
 
 .myButton > img {
@@ -56,12 +72,12 @@ body {
 }
 
 .parent {
-display: grid;
-grid-template-columns: repeat(5, 1fr);
-grid-template-rows: repeat(5, 1fr);
-grid-column-gap: 10px;
-grid-row-gap: 10px;
-margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    margin: 20px;
 }
 
 .div1 { grid-area: 1 / 1 / 2 / 2; }
@@ -85,6 +101,8 @@ margin: 20px;
   max-height: 100%;
 }
 
+
+
 #myInfo {
     display: none;
     position: absolute;
@@ -97,30 +115,72 @@ margin: 20px;
     column-count: 2;
     column-gap: 40px;
     column-rule: 1px solid black;
+    z-index: 99;
 }
 
 #myInfo p, #myInfo blockquote {
     padding: 10px 0 30px 0;
 }
 
+
 #myInfo blockquote {
     font-style: oblique;
 }
 
+#myInfo a {
+    color: white;
+    text-decoration: none;
+}
+
+#myInfo a:hover {
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+}
+
+
 #myInfo button {
     position: absolute;
-    right: 20;
+    right: 20px;
     top: 0;
     border: 0 none;
     background: transparent;
     font-size: 40px;
     padding: 0;
     cursor: pointer;
-    
 }
+
 #myInfo button:hover {
       opacity: 0.7; 
     }
+
+
+.middle {
+    height: 0;
+    transition: .3s ease;
+    opacity: 0;
+    position: relative;
+    top: -100px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.kid:hover .image {
+  opacity: 0.3;
+}
+
+.kid:hover .middle {
+  opacity: 1;
+}
+
+.caption {
+  background-color:rgba(254, 172, 197, 0.925);
+  color: white;
+  font-size: 0.9em;
+  padding: 5px 5px;
+}
+
 
 @media only screen and (max-width: 800px) {
     .title {
@@ -134,100 +194,154 @@ margin: 20px;
     #myInfo p {
         padding: 10px 0;
     }
+    .myButton {
+        transform: scale(80%);
+    }
 }
 
 @media only screen and (max-width: 420px) {
     .title {
         width:80%;
     }
-
     #myInfo {
         font-size: 1.0em;
     }
-}
+    .subtitle {
+    width: 90%;
+    margin: 30px auto;
+    }
 
+}
 </style>
 </head>
 
 <body>
     <a class="myButton" onclick="myFunction()"><img src="images/i.svg"></a>
     <img class="title" src="images/einfuhlung.svg">
+    <div class="subtitle">
+        <p>From March 2023 to September 2024 <a href="#" onclick="myFunction()" title="more info">Einfühlung</a>, a series of nine images by Piotr Szyhalski, is presented in the lightbox at the corner of Bouwmeestersstraat and Klinkkouterstraat in Sint-Ambandsberg Ghent (Belgium).</p>
+    </div>
     <div id="myInfo">
         <p><button onclick="myFunction()">&times;</button></p>
-        
-	<p style="text-align: center; font-size:130%;">"Einfühlung"</br>
-	Piotr Szyhalski / Labor Camp</br>
-	2022/2023
-	</p>        
-
-
-        
+	    <p style="text-align: center; font-size:130%;">"Einfühlung"</br>
+	    Piotr Szyhalski / Labor Camp</br>
+	    2022/2023
+	    </p>
         <blockquote>“Empathy is not simply a matter of trying to imagine what others are going through, but having the will to muster enough courage to do something about it. In a way, empathy is predicated upon hope.”
         — Cornel West</blockquote>
-        <p><a href="https://www.weareworkingallthetime.org/" style="color: grey; text-decoration:none;">Piotr Szyhalski</a> is a Polish born, US based artist compelled by the possibility of collective social transformation, an interest in the history of public messaging and signage, and hope. Szyhalski was thinking about the “capacity of art to be an empathetic space,” and sketched the ideas that led to this series and posted them online in early 2022. The recently completed <i>Einfühlung</i> series, presented in a lightbox in Ghent in 8 parts starting in March of 2023, follows the artist's collections of short idiomatic phrases, like “seeing eye to eye,” each a metaphor for interpersonal relation and interaction.
+        <p><a href="https://www.weareworkingallthetime.org/">Piotr Szyhalski</a> is a Polish born, US based artist compelled by the possibility of collective social transformation, an interest in the history of public messaging and signage, and hope. Szyhalski was thinking about the “capacity of art to be an empathetic space,” and sketched the ideas that led to this series and posted them online in early 2022. The recently completed <em>Einfühlung</em> series, presented in a lightbox in Ghent in 8 parts starting in March of 2023, follows the artist's collections of short idiomatic phrases, like “seeing eye to eye,” each a metaphor for interpersonal relation and interaction.
         </br></br>
          Einfühlung is a German word that translates as “in-feeling” or “feeling-into”, which originated with Robert Vischer in the late 19th century. This concept eventually became what we now think of as empathy.
-        
         </br></br>
-        
-        Each phrase selected by Szyhalski is like a micro-poem, where repetition suggests another person, a second body. The verbs have been withheld, but the phrases still resonate—the action always implied.  Animating these phrases, Szyhalski has drawn ethereal characters, that both float in the abyss, and are anchored to one another. This elegantly contoured series is suggestive of the invisible lines between the internal world of the individual and the external dynamics of the social body. With and without a caption, the drawings point to metaphors with social resonance, as we seek new forms of togetherness.</br></br>
-        
-        Co-curated by <a href="http://pleaseteleport.me/" style="color: grey; text-decoration:none;">Joseph del Pesco</a> and Boutique Vizique.</br></br>
+        Each phrase selected by Szyhalski is like a micro-poem, where repetition suggests another person, a second body. The verbs have been withheld, but the phrases still resonate—the action always implied.  Animating these phrases, Szyhalski has drawn ethereal characters, that both float in the abyss, and are anchored to one another. This elegantly contoured series is suggestive of the invisible lines between the internal world of the individual and the external dynamics of the social body. With and without a caption, the drawings point to metaphors with social resonance, as we seek new forms of togetherness.
+        </br></br>
+        Co-curated by <a href="http://pleaseteleport.me/">Joseph del Pesco</a> and Boutique Vizique.</br></br>
         Many thanks to vinyl-wrestler Lieselot Van Daele.</br> 
-        <a href="http://velvetyne.fr/fonts/compagnon" style="color: grey; text-decoration:none;">Compagnon Medium</a> font by Sébastien Riollier.</p>
-        </p>
-         
-    </div>
+        <a href="http://velvetyne.fr/fonts/compagnon">Compagnon Medium</a> font by Sébastien Riollier.</p>
+    </div> <!--close div myInfo-->
 <div class="parent">
-<div class="kid div1"><div class="gallery1">
-    <a href="images/full/1.png" class="thumb"><img src="images/thumb/1.png" /></a>
-    <a href="images/full/1b.png" style="display: none"></a>
-    <a href="images/full/1c.png" style="display: none"></a>
-    <a href="images/full/1d.png" style="display: none"></a>
-    <a href="images/full/1e.png" style="display: none"></a>
-    <a href="images/full/1f.png" style="display: none"></a>
-    <a href="images/full/1g.png" style="display: none"></a>
-    <a href="images/full/1h.png" style="display: none"></a>
-    <a href="images/full/1i.png" style="display: none"></a>
-    
-    
-</div></div>
-<div class="kid div2"><div class="gallery2">
-    <a href="images/full/2.png" class="thumb"><img src="images/thumb/2.png" /></a>
-    <a href="images/full/2b.png" style="display: none"></a>
-    <a href="images/full/2c.png" style="display: none"></a>
-    <a href="images/full/2d.png" style="display: none"></a>    
-    <a href="images/full/2e.png" style="display: none"></a>
-</div></div>
+    <div class="kid div1">
+        <div class="gallery1">
+            <a href="images/full/1.png" class="thumb"><img src="images/thumb/1.png" /></a>
 
-<div class="kid div3"><div class="gallery3">
-    <a href="images/full/3_coming.png" class="thumb"><img src="images/thumb/empty_wh.png" /></a>
-</div></div>
+            <a href="images/full/01-02.png" style="display: none"></a>
+            <a href="images/full/01-01.png" style="display: none"></a>
+            <a href="images/full/1g.png" style="display: none"></a>
+            <a href="images/full/1h.png" style="display: none"></a>
+            <a href="images/full/1i.png" style="display: none"></a>
+            <div class="middle">
+                <div class="caption">was on view from March to May 2023</div>
+            </div>
+        </div>
+    </div>
+    <div class="kid div2">
+        <div class="gallery2">
+            <a href="images/full/2.png" class="thumb"><img src="images/thumb/2.png" /></a>
 
-<div class="kid div4"><div class="gallery4">
-    <a href="images/full/4_coming.png" class="thumb"><img src="images/thumb/empty_wh.png" /></a>
-</div></div>
+            <a href="images/full/01-03.png" style="display: none"></a>
+            <a href="images/full/01-04.png" style="display: none"></a>    
+            <a href="images/full/2e.png" style="display: none"></a>
+            <div class="middle">
+                <div class="caption">was on display from March to July 2023</div>
+            </div>
+        </div>
+    </div>
 
-<div class="kid div5"><div class="gallery5">
-    <a href="images/full/5_coming.png" class="thumb"><img src="images/thumb/empty_wh.png" /></a>
-</div></div>
+    <div class="kid div3">
+        <div class="gallery3">
+            <a href="images/full/3.png" class="thumb"><img src="images/thumb/3.png" /></a>
+            <a href="images/full/03-01.png" style="display: none"></a>
+            <a href="images/full/03-02.png" style="display: none"></a>
+            <div class="middle">
+                <div class="caption">was on display from May to September 2023</div>
+            </div> 
+        </div>
+    </div>
 
-<div class="kid div6"><div class="gallery6">
-    <a href="images/full/6_coming.png" class="thumb"><img src="images/thumb/empty_wh.png" /></a>
-</div></div>
-<div class="kid div7"><div class="gallery7">
-    <a href="images/full/7_coming.png" class="thumb"><img src="images/thumb/empty_wh.png" /></a>
-</div></div>
+    <div class="kid div4">
+        <div class="gallery4">
+            <a href="images/full/4.png" class="thumb"><img src="images/thumb/4.png" /></a>
+            
+            <a href="images/full/04-01.png" style="display: none"></a>
+            <a href="images/full/04-02.png" style="display: none"></a> 
+            <a href="images/full/04-03.png" style="display: none"></a> 
+            <a href="images/full/04-04.png" style="display: none"></a> 
+            <a href="images/full/04-05.png" style="display: none"></a> 
+            <div class="middle">
+                <div class="caption">was on display July from May to November 2023</div>
+            </div> 
+        </div>
+    </div>
 
-<div class="kid div8"><div class="gallery8">
-    <a href="images/full/8_coming.png" class="thumb"><img src="images/thumb/empty_wh.png" /></a>
-</div></div>
+    <div class="kid div5">
+        <div class="gallery5">
+            <a href="images/full/5.png" class="thumb"><img src="images/thumb/5.png" /></a>
+            <a href="images/full/05-01.png" style="display: none"></a>
+            <a href="images/full/05-03.png" style="display: none"></a> 
+            <a href="images/full/05-04.png" style="display: none"></a> 
+            <a href="images/full/05-02.png" style="display: none"></a> 
+            <div class="middle">
+                <div class="caption">was on display from September 2023 to January 2024</div>
+            </div> 
+        </div>
+    </div>
 
-<div class="kid div9"><div class="gallery9">
-    <a href="images/full/9_coming.png" class="thumb"><img src="images/thumb/empty_wh.png" /></a>
-</div></div>
+    <div class="kid div6">
+        <div class="gallery6">
+            <a href="images/full/6.png" class="thumb"><img src="images/thumb/6.1.png" /></a>
+            <div class="middle">
+                <div class="caption">is on display from November 2023 to March 2024</div>
+            </div> 
+        </div>
+    </div>
 
-</div>
+    <div class="kid div7">
+        <div class="gallery7">
+            <a href="images/full/7_coming.png" class="thumb"><img src="images/thumb/empty_wh.png" /></a>
+            <div class="middle">
+                <div class="caption">is on display from January to May 2024</div>
+            </div> 
+        </div>
+    </div>
+
+    <div class="kid div8">
+        <div class="gallery8">
+            <a href="images/full/8_coming.png" class="thumb"><img src="images/thumb/empty_wh.png" /></a>
+            <div class="middle">
+                <div class="caption">will be on display from March to July 2024</div>
+            </div> 
+        </div>
+    </div>
+
+    <div class="kid div9">
+        <div class="gallery9">
+            <a href="images/full/9_coming.png" class="thumb"><img src="images/thumb/empty_wh.png" /></a>
+            <div class="middle">
+               <div class="caption">will be on display from may to September 2024</div>
+            </div> 
+        </div>
+    </div>
+</div><!--close div parent-->
 
 <script src="lb/simple-lightbox.js"></script>
 <script>
@@ -237,6 +351,7 @@ margin: 20px;
     x.style.display = "none";
   } else {
     x.style.display = "block";
+    window.scrollTo(0,0);
   }
 }
 </script>

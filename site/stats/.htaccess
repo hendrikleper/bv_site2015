@@ -1,0 +1,7 @@
+AuthName "boutiquevizique.com statistics"
+AuthType Basic
+AuthUserFile /var/www/htdocs/boutiquevizique/.stats-htpasswd
+require valid-user
+<Files .stats-htpasswd>
+deny from all
+</Files>

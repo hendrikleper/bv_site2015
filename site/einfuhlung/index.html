@@ -8,8 +8,8 @@
     <link rel="icon" type="image/png" sizes="32x32" href="images/fav/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/fav/favicon-16x16.png">
     <link rel="manifest" href="images/fav/site.webmanifest">
-    <link rel="mask-icon" href="images/fav/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
+    <link rel="mask-icon" href="images/fav/safari-pinned-tab.svg" color="rgb(254, 172, 197)">
+    <meta name="msapplication-TileColor" content="rgb(254, 172, 197)">
     <meta name="theme-color" content="#ffffff">
     <style>
 
@@ -41,6 +41,7 @@ body {
 .subtitle {
     width: 75%;
     margin: 30px auto;
+    font-size: 1.1em;
 }
 
 .subtitle a {
@@ -77,7 +78,7 @@ body {
     grid-template-rows: repeat(5, 1fr);
     grid-column-gap: 10px;
     grid-row-gap: 10px;
-    margin: 20px;
+    margin: 5px 20px;
 }
 
 .div1 { grid-area: 1 / 1 / 2 / 2; }
@@ -93,6 +94,8 @@ body {
 .kid {
     background-color: black;
     color: white;
+    padding: 0;
+    margin: 0;
 }
 
 .thumb > img {
@@ -101,14 +104,12 @@ body {
   max-height: 100%;
 }
 
-
-
 #myInfo {
     display: none;
     position: absolute;
     top: 0;
     left: 0;
-    font-size: 1.1em;
+    font-size: 1.2em;
     margin: 50px;
     padding: 50px;
     background-color: rgba(254, 172, 197, 0.925);
@@ -137,7 +138,6 @@ body {
     text-decoration-style: wavy;
 }
 
-
 #myInfo button {
     position: absolute;
     right: 20px;
@@ -153,13 +153,12 @@ body {
       opacity: 0.7; 
     }
 
-
 .middle {
     height: 0;
     transition: .3s ease;
     opacity: 0;
-    position: relative;
-    top: -100px;
+    position: fixed;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -177,8 +176,8 @@ body {
 .caption {
   background-color:rgba(254, 172, 197, 0.925);
   color: white;
-  font-size: 0.9em;
-  padding: 5px 5px;
+  font-size: 1.1em;
+  padding: 20px 20px;
 }
 
 
@@ -194,6 +193,10 @@ body {
     #myInfo p {
         padding: 10px 0;
     }
+    .subtitle {
+        width: 90%;
+        font-size: 1.1em;
+    }
     .myButton {
         transform: scale(80%);
     }
@@ -204,11 +207,12 @@ body {
         width:80%;
     }
     #myInfo {
-        font-size: 1.0em;
+        font-size: 0.9em;
     }
     .subtitle {
-    width: 90%;
-    margin: 30px auto;
+        width: 90%;
+        margin: 30px auto;
+        font-size: 0.7em;
     }
 
 }
@@ -219,7 +223,7 @@ body {
     <a class="myButton" onclick="myFunction()"><img src="images/i.svg"></a>
     <img class="title" src="images/einfuhlung.svg">
     <div class="subtitle">
-        <p>From March 2023 to September 2024 <a href="#" onclick="myFunction()" title="more info">Einfühlung</a>, a series of nine images by Piotr Szyhalski, is presented in the lightbox at the corner of Bouwmeestersstraat and Klinkkouterstraat in Sint-Ambandsberg Ghent (Belgium).</p>
+        <p>From March 2023 to September 2024 <a href="#" onclick="myFunction()" title="more info">Einfühlung</a>, a series of nine images by Piotr Szyhalski, is presented in the lightbox at the corner of Bouwmeestersstraat and Klinkkouterstraat, Ghent Belgium.</p>
     </div>
     <div id="myInfo">
         <p><button onclick="myFunction()">&times;</button></p>
@@ -242,102 +246,99 @@ body {
 <div class="parent">
     <div class="kid div1">
         <div class="gallery1">
-            <a href="images/full/1.png" class="thumb"><img src="images/thumb/1.png" /></a>
-
+            <a href="images/full/1.png" class="thumb"><img src="images/thumb2/01.svg" /></a>
             <a href="images/full/01-02.png" style="display: none"></a>
             <a href="images/full/01-01.png" style="display: none"></a>
             <a href="images/full/1g.png" style="display: none"></a>
             <a href="images/full/1h.png" style="display: none"></a>
             <a href="images/full/1i.png" style="display: none"></a>
             <div class="middle">
-                <div class="caption">was on view from March to May 2023</div>
+                <div class="caption">was on view<br> from March to May 2023</div>
             </div>
         </div>
     </div>
     <div class="kid div2">
         <div class="gallery2">
-            <a href="images/full/2.png" class="thumb"><img src="images/thumb/2.png" /></a>
-
+            <a href="images/full/2.png" class="thumb"><img src="images/thumb2/02.svg" /></a>
             <a href="images/full/01-03.png" style="display: none"></a>
             <a href="images/full/01-04.png" style="display: none"></a>    
             <a href="images/full/2e.png" style="display: none"></a>
             <div class="middle">
-                <div class="caption">was on display from March to July 2023</div>
+                <div class="caption">was on display<br> from March to July 2023</div>
             </div>
         </div>
     </div>
 
     <div class="kid div3">
         <div class="gallery3">
-            <a href="images/full/3.png" class="thumb"><img src="images/thumb/3.png" /></a>
+            <a href="images/full/3.png" class="thumb"><img src="images/thumb2/03.svg" /></a>
             <a href="images/full/03-01.png" style="display: none"></a>
             <a href="images/full/03-02.png" style="display: none"></a>
             <div class="middle">
-                <div class="caption">was on display from May to September 2023</div>
+                <div class="caption">was on display<br> from May to September 2023</div>
             </div> 
         </div>
     </div>
 
     <div class="kid div4">
         <div class="gallery4">
-            <a href="images/full/4.png" class="thumb"><img src="images/thumb/4.png" /></a>
-            
+            <a href="images/full/4.png" class="thumb"><img src="images/thumb2/04.svg" /></a>
             <a href="images/full/04-01.png" style="display: none"></a>
             <a href="images/full/04-02.png" style="display: none"></a> 
             <a href="images/full/04-03.png" style="display: none"></a> 
             <a href="images/full/04-04.png" style="display: none"></a> 
             <a href="images/full/04-05.png" style="display: none"></a> 
             <div class="middle">
-                <div class="caption">was on display July from May to November 2023</div>
+                <div class="caption">was on display<br> July from May to November 2023</div>
             </div> 
         </div>
     </div>
 
     <div class="kid div5">
         <div class="gallery5">
-            <a href="images/full/5.png" class="thumb"><img src="images/thumb/5.png" /></a>
+            <a href="images/full/5.png" class="thumb"><img src="images/thumb2/05.svg" /></a>
             <a href="images/full/05-01.png" style="display: none"></a>
             <a href="images/full/05-03.png" style="display: none"></a> 
             <a href="images/full/05-04.png" style="display: none"></a> 
             <a href="images/full/05-02.png" style="display: none"></a> 
             <div class="middle">
-                <div class="caption">was on display from September 2023 to January 2024</div>
+                <div class="caption">was on display<br> from September 2023 to January 2024</div>
             </div> 
         </div>
     </div>
 
     <div class="kid div6">
         <div class="gallery6">
-            <a href="images/full/6.png" class="thumb"><img src="images/thumb/6.1.png" /></a>
+            <a href="images/full/6.png" class="thumb"><img src="images/thumb2/06.svg" /></a>
             <div class="middle">
-                <div class="caption">is on display from November 2023 to March 2024</div>
+                <div class="caption">is on display<br> from November 2023 to March 2024</div>
             </div> 
         </div>
     </div>
 
     <div class="kid div7">
         <div class="gallery7">
-            <a href="images/full/7_coming.png" class="thumb"><img src="images/thumb/empty_wh.png" /></a>
+            <a href="images/full/7_coming.png" class="thumb"><img src="images/thumb2/07.svg" /></a>
             <div class="middle">
-                <div class="caption">is on display from January to May 2024</div>
+                <div class="caption">is on display<br> from January to May 2024</div>
             </div> 
         </div>
     </div>
 
     <div class="kid div8">
         <div class="gallery8">
-            <a href="images/full/8_coming.png" class="thumb"><img src="images/thumb/empty_wh.png" /></a>
+            <a href="images/full/8_coming.png" class="thumb"><img src="images/thumb2/08.svg" /></a>
             <div class="middle">
-                <div class="caption">will be on display from March to July 2024</div>
+                <div class="caption">will be on display<br> from March to July 2024</div>
             </div> 
         </div>
     </div>
 
     <div class="kid div9">
         <div class="gallery9">
-            <a href="images/full/9_coming.png" class="thumb"><img src="images/thumb/empty_wh.png" /></a>
+            <a href="images/full/9_coming.png" class="thumb"><img src="images/thumb2/09.svg" /></a>
             <div class="middle">
-               <div class="caption">will be on display from may to September 2024</div>
+               <div class="caption">will be on display<br> from May to September 2024</div>
             </div> 
         </div>
     </div>
@@ -346,18 +347,17 @@ body {
 <script src="lb/simple-lightbox.js"></script>
 <script>
     function myFunction() {
-  var x = document.getElementById("myInfo");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-    window.scrollTo(0,0);
-  }
-}
+        var x = document.getElementById("myInfo");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+            window.scrollTo(0,0);
+        }
+    }
 </script>
-
 <script>
-      (function () {
+    (function () {
         var $gallery1 = new SimpleLightbox(".gallery1 a", {});
         var $gallery2 = new SimpleLightbox(".gallery2 a", {});
         var $gallery3 = new SimpleLightbox(".gallery3 a", {});
@@ -367,9 +367,7 @@ body {
         var $gallery7 = new SimpleLightbox(".gallery7 a", {});
         var $gallery8 = new SimpleLightbox(".gallery8 a", {});
         var $gallery9 = new SimpleLightbox(".gallery9 a", {});
-        
-      })();
+    })();
 </script>
-
 </body>
 </html>

@@ -158,7 +158,7 @@ body {
     transition: .3s ease;
     opacity: 0;
     position: fixed;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -180,6 +180,10 @@ body {
   padding: 20px 20px;
 }
 
+.sl-caption {
+    font-size: 0.9em;
+    text-align: center;
+}
 
 @media only screen and (max-width: 800px) {
     .title {
@@ -196,6 +200,10 @@ body {
     .subtitle {
         width: 90%;
         font-size: 1.1em;
+    }
+    .caption {
+        font-size: 1.0em;
+        padding: 10px 10px;
     }
     .myButton {
         transform: scale(80%);
@@ -214,8 +222,17 @@ body {
         margin: 30px auto;
         font-size: 0.7em;
     }
-
+    .caption {
+        font-size: 0.9em;
+        padding: 2px 3px;
+    }
+    .sl-caption {
+        font-size: 0.6em;
+    }
 }
+
+
+
 </style>
 </head>
 
@@ -245,101 +262,86 @@ body {
     </div> <!--close div myInfo-->
 <div class="parent">
     <div class="kid div1">
-        <div class="gallery1">
-            <a href="images/full/1.png" class="thumb"><img src="images/thumb2/01.svg" /></a>
-            <a href="images/full/01-02.png" style="display: none"></a>
+        <div class="gallery1 tooltip">
+            <a href="images/full/1.png" class="thumb"><img src="images/thumb2/01.svg" title="on display from March to May 2023"/></a>
+            <a href="images/full/01-02.png" style="display: none" ></a>
             <a href="images/full/01-01.png" style="display: none"></a>
             <a href="images/full/1g.png" style="display: none"></a>
             <a href="images/full/1h.png" style="display: none"></a>
             <a href="images/full/1i.png" style="display: none"></a>
-            <div class="middle">
-                <div class="caption">was on view<br> from March to May 2023</div>
-            </div>
+            <!--div class="middle">
+                <div class="caption">was on display<br> from March to May 2023</div>
+            </div-->
         </div>
     </div>
     <div class="kid div2">
-        <div class="gallery2">
-            <a href="images/full/2.png" class="thumb"><img src="images/thumb2/02.svg" /></a>
+        <div class="gallery2 tooltip">
+            <a href="images/full/2.png" class="thumb"><img src="images/thumb2/02.svg" title="on display from March to July 2023"/></a>
             <a href="images/full/01-03.png" style="display: none"></a>
             <a href="images/full/01-04.png" style="display: none"></a>    
             <a href="images/full/2e.png" style="display: none"></a>
-            <div class="middle">
-                <div class="caption">was on display<br> from March to July 2023</div>
-            </div>
         </div>
     </div>
 
     <div class="kid div3">
         <div class="gallery3">
-            <a href="images/full/3.png" class="thumb"><img src="images/thumb2/03.svg" /></a>
+            <a href="images/full/3.png" class="thumb"><img src="images/thumb2/03.svg" title="on display from May to September 2023"/></a>
             <a href="images/full/03-01.png" style="display: none"></a>
             <a href="images/full/03-02.png" style="display: none"></a>
-            <div class="middle">
-                <div class="caption">was on display<br> from May to September 2023</div>
-            </div> 
         </div>
     </div>
 
     <div class="kid div4">
         <div class="gallery4">
-            <a href="images/full/4.png" class="thumb"><img src="images/thumb2/04.svg" /></a>
+            <a href="images/full/4.png" class="thumb"><img src="images/thumb2/04.svg" title="on display July from May to November 2023"/></a>
             <a href="images/full/04-01.png" style="display: none"></a>
             <a href="images/full/04-02.png" style="display: none"></a> 
             <a href="images/full/04-03.png" style="display: none"></a> 
             <a href="images/full/04-04.png" style="display: none"></a> 
             <a href="images/full/04-05.png" style="display: none"></a> 
-            <div class="middle">
-                <div class="caption">was on display<br> July from May to November 2023</div>
-            </div> 
         </div>
     </div>
 
     <div class="kid div5">
         <div class="gallery5">
-            <a href="images/full/5.png" class="thumb"><img src="images/thumb2/05.svg" /></a>
+            <a href="images/full/5.png" class="thumb"><img src="images/thumb2/05.svg" title="on display from September 2023 to January 2024"/></a>
             <a href="images/full/05-01.png" style="display: none"></a>
             <a href="images/full/05-03.png" style="display: none"></a> 
             <a href="images/full/05-04.png" style="display: none"></a> 
-            <a href="images/full/05-02.png" style="display: none"></a> 
-            <div class="middle">
-                <div class="caption">was on display<br> from September 2023 to January 2024</div>
-            </div> 
+            <a href="images/full/05-05.png" style="display: none"></a> 
+            <a href="images/full/05-06.png" style="display: none"></a> 
+            <a href="images/full/05-08.png" style="display: none"></a> 
+            <a href="images/full/05-07.png" style="display: none"></a> 
         </div>
     </div>
 
     <div class="kid div6">
         <div class="gallery6">
-            <a href="images/full/6.png" class="thumb"><img src="images/thumb2/06.svg" /></a>
-            <div class="middle">
-                <div class="caption">is on display<br> from November 2023 to March 2024</div>
-            </div> 
+            <a href="images/full/6.png" class="thumb"><img src="images/thumb2/06.svg" title="on display from November 2023 to March 2024"/></a>
+            <a href="images/full/06-01.png" style="display: none"></a>
+            <a href="images/full/06-02.png" style="display: none"></a> 
+            <a href="images/full/06-03.png" style="display: none"></a> 
+            <a href="images/full/06-04.png" style="display: none"></a>
+            <a href="images/full/06-05.png" style="display: none"></a> 
+            <a href="images/full/06-06.png" style="display: none"></a> 
         </div>
     </div>
 
     <div class="kid div7">
         <div class="gallery7">
-            <a href="images/full/7_coming.png" class="thumb"><img src="images/thumb2/07.svg" /></a>
-            <div class="middle">
-                <div class="caption">is on display<br> from January to May 2024</div>
-            </div> 
+            <a href="images/full/7.png" class="thumb"><img src="images/thumb2/07.svg" title="on display from January to May 2024"/></a>
         </div>
     </div>
 
     <div class="kid div8">
         <div class="gallery8">
-            <a href="images/full/8_coming.png" class="thumb"><img src="images/thumb2/08.svg" /></a>
-            <div class="middle">
-                <div class="caption">will be on display<br> from March to July 2024</div>
-            </div> 
+            <a href="images/full/8_coming.png" class="thumb"><img src="images/thumb2/08.svg" title="on display from March to July 2024"/></a>
         </div>
     </div>
 
     <div class="kid div9">
         <div class="gallery9">
-            <a href="images/full/9_coming.png" class="thumb"><img src="images/thumb2/09.svg" /></a>
-            <div class="middle">
-               <div class="caption">will be on display<br> from May to September 2024</div>
-            </div> 
+            <a href="images/full/9_coming.png" class="thumb"><img src="images/thumb2/09.svg" title="on display from May to September 2024"/></a>
         </div>
     </div>
 </div><!--close div parent-->
@@ -358,7 +360,7 @@ body {
 </script>
 <script>
     (function () {
-        var $gallery1 = new SimpleLightbox(".gallery1 a", {});
+        var $gallery1 = new SimpleLightbox(".gallery1 a", {captionPosition: 'outside'});
         var $gallery2 = new SimpleLightbox(".gallery2 a", {});
         var $gallery3 = new SimpleLightbox(".gallery3 a", {});
         var $gallery4 = new SimpleLightbox(".gallery4 a", {});
@@ -369,5 +371,6 @@ body {
         var $gallery9 = new SimpleLightbox(".gallery9 a", {});
     })();
 </script>
+
 </body>
 </html>

@@ -137,10 +137,10 @@ body.hidden-scroll {
           border: 0 none; } }
     .sl-wrapper .sl-image .sl-caption {
       display: none;
-      padding: 10px;
-      color: #fff;
-      background: rgba(0, 0, 0, 0.8);
-      font-size: 1rem;
+      padding: 6px 10px;
+      color: #000000;
+      background-color:rgba(254, 172, 197, 0.925);
+      xfont-size: 1rem;
       position: absolute;
       bottom: 0;
       left: 0;
